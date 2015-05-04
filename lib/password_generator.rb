@@ -4,9 +4,14 @@ module PasswordGenerator
   DIGIT = ASCII.grep(/[[:digit:]]/)
   PUNCT = ASCII.grep(/[[:punct:]]/)
 
-  def self.generate
+  def self.generate(unique: false)
+    alpha = ALPHA.dup
     (1..20).map do
-      ALPHA.sample
-      end.join
-    end
+      if unique
+        alpha.delete_at(rand(alpha.size))
+      else
+        alpha.sample
+      end
+    end.join
+  end
 end

@@ -5,12 +5,12 @@ require 'password_generator/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "password_generator"
-  spec.version       = PasswordGenerator::VERSION
+  spec.version       = '0.0.0'
   spec.authors       = ["peel3r"]
   spec.email         = ["p@weljakubowski.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
+  spec.description   = %q{ Write a longer description or delete this line.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
