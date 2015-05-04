@@ -1,11 +1,12 @@
-require 'minitest_helper'
+require 'minitest/autorun'
+require 'password_generator'
 
-class TestPasswordGenerator < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::PasswordGenerator::VERSION
+class PasswordGeneratorTest < Minitest::Test
+  def test_alpha
+    50.times do
+      assert_match /^[[:alpha:]]+$/, PasswordGenerator.generate
+    end
   end
 
-  def test_it_does_something_useful
-    assert false
-  end
+
 end
