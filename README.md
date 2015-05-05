@@ -1,10 +1,10 @@
 # PasswordGenerator
-requirements
- *length
- *number of each type
+##Features
+ *set up password length
+ *set up number of each type
  *default mix of upper and lower
- *add x digits and x punct optionally
- *disallow repeating?
+ *add x digits and x punctuation signs
+ *disallow repeating
 
 ## Installation
 
@@ -34,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/password_generator/fork )
+1. Fork it ( https://github.com/[peel3r]/password_generator/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
