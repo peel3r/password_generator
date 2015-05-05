@@ -1,10 +1,10 @@
 # PasswordGenerator
 ##Features
- *set up password length
- *set up number of each type
- *default mix of upper and lower
- *add x digits and x punctuation signs
- *disallow repeating
+1. set up password length
+2. set up number of each type
+3. default mix of upper and lower
+4. add x digits and x punctuation signs
+5. disallow repeating
 
 ## Installation
 
