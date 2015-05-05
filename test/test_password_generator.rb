@@ -34,4 +34,22 @@ class PasswordGeneratorTest < Minitest::Test
       assert_equal 15, password.chars.uniq.size
     end
   end
+
+  def test_upper
+    50.times do
+      password =  PasswordGenerator.generate(unique: true, upper: 1, length: 15)
+      assert_match /^[[:lower:]]*[[:upper:]]*[[:lower:]]*$/, password
+      assert_equal 15,password.size
+      assert_equal 15, password.chars.uniq.size
+    end
+  end
+
+  def test_no_upper
+    50.times do
+      password =  PasswordGenerator.generate(unique: true, upper: 0, length: 15)
+      assert_match /^[[:lower:]]*[[:upper:]]*[[:lower:]]*$/, password
+      assert_equal 15,password.size
+      assert_equal 15, password.chars.uniq.size
+    end
+  end
 end
